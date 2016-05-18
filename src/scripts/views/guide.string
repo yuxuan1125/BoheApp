@@ -1,0 +1,16 @@
+<div class="swiper-container" id="guide-swiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <img src="/BoheiApp/images/slide1.PNG" />
+    </div>
+    <div class="swiper-slide">
+      <img src="/BoheiApp/images/slide2.PNG" />
+    </div>
+    <div class="swiper-slide">
+      <img src="/BoheiApp/images/slide3.PNG" />
+    </div>
+    <div class="swiper-slide" action-type="goto.index">
+      <img src="/BoheiApp/images/slide4.PNG" />
+    </div>
+  </div>
+</div>

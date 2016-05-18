@@ -1,0 +1,99 @@
+	<header>
+		<span>薄荷家居</span>
+		<i class='yo-ico'>&#x348d;</i>
+	</header>
+	<nav>
+		<div class="whitespace"></div>
+		<div class="main" id="nav-swiper">
+			<div class="active txt" action-type="tap.hot.slide">精选</div>
+			<div action-type="tap.hot.slide" class="txt">卧室</div>
+			<div action-type="tap.hot.slide" class="txt">书房</div>
+			<div action-type="tap.hot.slide" class="txt">卫浴</div>
+			<div action-type="tap.hot.slide" class="txt">客厅</div>
+			<div action-type="tap.hot.slide" class="txt">厨房</div>
+			<div class="yo-ico" id="xsj" action-type="tap.more">&#xe607;</div>
+		</div>
+		<div class="whitespace"></div>
+	</nav>
+	<div class="swiper-container" id="Big-swiper" >
+			<div class="swiper-wrapper ">
+				<div class="swiper-slide slide1" >
+					<section spa-widget="scroll" data-scroll-id="homeHotScroll"> 
+						<div class="bigScroll">
+							<div class="head">
+				                <img src="/BoheiAPp/images/arrow.png"/>
+				                <span>下拉刷新...</span>
+                			</div>
+							<div class="swiper-container " id="mini-swiper">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<img src="/BoheiApp/images/mini-swiper/1.png"/>	
+									</div>
+									<div class="swiper-slide">
+										<img src="/BoheiApp/images/mini-swiper/21.png"/>
+									</div>
+									<div class="swiper-slide">
+										<img src="/BoheiApp/images/mini-swiper/2.png"/>
+									</div>
+								</div>
+							</div>
+							<div class="main-content">
+								<div class="part" ms-repeat="homeList">
+									<div class="top">
+										<img  ms-src="el.imgurl1"/>	
+									</div>
+									<div class="main-ct">
+										<div class="whitespace"></div>
+										<img  ms-src="el.imgurl2"/>
+										<div class="whitespace"></div>
+									</div>
+									<div class="main-ct">
+										<div class="whitespace"></div>
+										<img  ms-src="el.imgurl3"/>
+										<div class="whitespace"></div>
+									</div>	
+								</div>
+							</div>
+							<div class="foot">
+				                <img src="/BoheiAPp/images/arrow.png"/>
+				                <span>上拉加载更多...</span>
+                			</div>
+						</div>
+					</section>
+					
+					
+					
+				</div>
+				<div class="swiper-slide" style="background: green;">slide2</div>
+				<div class="swiper-slide" style="background: red;">slide3</div>
+				<div class="swiper-slide" >slide4</div>
+				<div class="swiper-slide" >slide5</div>
+				<div class="swiper-slide" >slide6</div>
+			</div>
+			<div id="hideNav" >
+					<div>
+						<div class="navv">精选</div>
+						<div class="navv">卧室</div>
+						<div class="navv">书房</div>
+						<div class="navv">卫浴</div>
+						<div class="navv">客厅</div>
+						<div class="navv">厨房</div>
+						
+					</div>
+			<div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

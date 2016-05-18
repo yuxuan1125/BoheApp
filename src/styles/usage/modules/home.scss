@@ -1,0 +1,283 @@
+ .show{
+     display: block;
+ };
+ 
+ @-webkit-keyframes fade-in-down {
+    0% {
+        opacity: 0;
+        height: 0;
+    }
+    10%{
+         opacity: 1;
+    }
+    100% {
+        opacity: 1;
+        height: 700px;
+    }
+};
+
+@keyframes fade-in-down {
+    0% {
+        opacity: 0;
+        height: 0;
+    }
+    10%{
+         opacity: 1;
+    }
+    100% {
+        opacity: 1;
+        height: 700px;
+    }
+};
+
+ @-webkit-keyframes fade-in-up {
+    0% {
+        opacity: 1;
+        height: auto;
+    }
+    
+    100% {
+        opacity: 0;
+        height: 0px;
+    }
+};
+
+@keyframes fade-in-up {
+    0% {
+        opacity: 1;
+        height: auto;
+    }
+    100% {
+        opacity: 0;
+        height: 0px;
+    }
+};
+
+ header{
+        width: 100%;
+        height: 46px;
+        background:$base-color;
+        position: relative;
+        border-bottom: 1px solid #C8C7CC;
+        @include box-sizing(border-box);
+        span,i{
+            display: block;
+            width:.72rem;
+            height: 100%;
+            font-size: .18rem;
+            color: #FFFFFF;
+            margin: 0 auto;
+            line-height: 46px;
+            
+        };
+        i{
+            width: 51px;
+            text-align: center;
+            position: absolute;
+            right: 0;
+            top:0;
+        }
+    }
+    nav{
+        width: 100%;
+        height: 36px;
+        border-bottom: 1px solid #C8C7CC;
+        @include box-sizing(border-box);
+        @include flexbox();
+        .whitespace{
+            width:.12rem;
+            height: 100%;
+        }
+        .main{
+            @include flex();
+            @include flexbox();
+            @include justify-content(center);
+            height: 100%;
+            div{
+                @include flex();
+                @include box-sizing(border-box);
+                text-align: center;
+                height: 100%;
+                line-height: 36px;
+                font-size: .14rem;
+                color: #333333;
+                &:last-child{
+                    line-height: .42rem;
+                    color: #A7A7AA;
+                }
+            }
+            .active{
+                color: $base-color;
+                border-bottom: 2px solid $base-color;
+            }
+        }
+    }
+        #Big-swiper{
+            @include flex();
+            width: 100%;
+            height: 100%;
+            position: relative;
+            >.swiper-wrapper{
+                position: absolute;
+                top:0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                .swiper-slide{
+                   width: 100%;
+                   height: 100%;
+                }
+                .slide1{
+                    width: 100%;
+                    height: 100%;
+                    img{
+                        outline: none;
+                    }
+                    section{
+                        width: 100%;
+                        height: 100%;
+                        .bigScroll{
+                            width: 100%;
+                            height: auto;
+                            padding-bottom: 0.1rem;
+                            .head {
+                              margin-top: .05rem;
+                              text-align: center;
+                            }
+                            .head img {
+                                  height: .16rem;
+                                  width: .16rem;
+                                  display: inline-block;
+                                  transform: rotate(180deg);
+                                  -webkit-transform: rotate(180deg);
+                                  transition: transform 150ms;
+                                  -webkit-transition: transform 150ms;
+                              }
+                            .up {
+                                  transform: rotate(360deg) !important;
+                                  -webkit-transform: rotate(360deg) !important;
+                              }
+                            .foot {
+                                  text-align: center;
+                                  margin: .05rem 0;
+                              }
+                            .foot img {
+                                  height: .16rem;
+                                  width: .16rem;
+                                  display: inline-block;
+                                  /*transform: rotate(0deg);*/
+                                  /*-webkit-transform: rotate(0deg);*/
+                                  transition: transform 150ms;
+                                  -webkit-transition: transform 150ms;
+                              }
+                            .down {
+                                  transform: rotate(180deg) !important;
+                                  -webkit-transform: rotate(180deg) !important;
+                            }
+                            #mini-swiper{
+                                width: 120%;
+                                height: 1.5rem;
+                                left: -10%;
+                                top:-2%;
+                                img{
+                                    width: 100%;
+                                    height: 100%;
+                                    display: block;
+                                }
+                                >div{
+                                    width: 100%;
+                                    height: 120%;
+                                    top:-10%;
+                                }
+                            };
+                            .main-content{
+                                    width: 100%;
+                                    border-top: 1px solid #E0E0E0;
+                                    background: white;
+                                    position: relative;
+                                    .top{
+                                        width: 100%;
+                                        height: .35rem;
+                                        margin-top: .1rem;
+                                        img{
+                                            width: 100%;
+                                            height: 100%;
+                                        }
+                                    };
+                                    .main-ct{
+                                        width: 100%;
+                                        height: 1.6rem;
+                                        margin-top: .08rem;
+                                        @include flexbox();
+                                        .whitespace{
+                                            width: 0.07rem;
+                                            height: 100%;
+                                        }
+                                        img{
+                                            @include flex();
+                                            height: 100%;
+                                        }
+                                    }
+                            }
+                        }
+                    }
+                    
+                }
+            }
+        }
+        #hideNav{
+//          display: none;
+            z-index: 9999;
+            position: absolute;
+            width: 100%;
+            top:-182px;
+            left: 0;
+            background: #FAFAFA;
+            >div{
+                position: absolute;
+                width: 3.59rem;
+                top:.2rem;
+                left:.11rem;
+                right:.05rem;
+                .navv{
+                    height: .33rem;
+                    width: .77rem;
+                    @include box-sizing(border-box);
+                    border: 1px solid #E0E0E0;
+                    margin-right: .12rem;
+                    float: left;
+                    text-align: center;
+                    line-height: .33rem;
+                    font-size: .1rem;
+                    margin-bottom: .13rem;
+                }
+            }
+        }
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,16 @@
+$font-heiti-light: Heiti SC Light, Helvetica Neue, Helvetica, STHeiTi, sans-serif;
+$font-heiti-medium: Heiti SC Medium, Heiti SC Light, Helvetica Neue, Helvetica, STHeiTi, sans-serif;
+
+$base-color:  #4DD3A9;
+
+@font-face {
+font-family: yofont;
+src: url("/BoheiApp/images/icon-font/iconfont.woff") format("woff"), 
+url("/BoheiApp/images/icon-font/iconfont.ttf") format("truetype");
+};
+
+@font-face {
+font-family: yofont;
+src: url("/BoheiApp/images/icon-font/xsj.woff") format("woff"), 
+url("/BoheiApp/images/icon-font/xsj.ttf") format("truetype");
+}
